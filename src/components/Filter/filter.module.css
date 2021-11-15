@@ -1,0 +1,13 @@
+.filter {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 22px;
+}
+
+.filter input {
+  width: 275px;
+  height: 20px;
+  border: 2px solid teal;
+  border-radius: 5px;
+}

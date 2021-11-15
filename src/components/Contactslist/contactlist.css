@@ -1,0 +1,25 @@
+.contacts {
+  padding: 10px;
+}
+
+.contacts li {
+  font-size: 18px;
+  margin-bottom: 5px;
+
+  color: #000;
+}
+
+.contacts li button {
+  margin-left: 10px;
+  text-align: center;
+  width: 65px;
+  height: 25px;
+  color: teal;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.contacts li button:hover {
+  color: #fff;
+  background-color: teal;
+}
