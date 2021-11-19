@@ -1,17 +1,7 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { authOperation } from '../../redux/auth';
-
-const styles = {
-  form: {
-    width: 320,
-  },
-  label: {
-    display: 'flex',
-    flexDirection: 'column',
-    marginBottom: 15,
-  },
-};
+import s from './login.module.css';
 
 export default function Login() {
   const dispatch = useDispatch();
@@ -37,12 +27,12 @@ export default function Login() {
   };
 
   return (
-    <div>
-      <h1>Страница логина</h1>
+    <div className={s.container}>
+      <h1>Login</h1>
 
-      <form onSubmit={handleSubmit} style={styles.form} autoComplete="off">
-        <label style={styles.label}>
-          Почта
+      <form onSubmit={handleSubmit} autoComplete="off">
+        <label>
+          Email
           <input
             type="email"
             name="email"
@@ -51,8 +41,8 @@ export default function Login() {
           />
         </label>
 
-        <label style={styles.label}>
-          Пароль
+        <label>
+          Password
           <input
             type="password"
             name="password"
@@ -61,7 +51,9 @@ export default function Login() {
           />
         </label>
 
-        <button type="submit">Войти</button>
+        <button type="submit" className={s.button}>
+          Sign In
+        </button>
       </form>
     </div>
   );
