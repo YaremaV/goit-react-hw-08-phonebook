@@ -7,6 +7,7 @@ const styles = {
     textDecoration: 'none',
     padding: 12,
     fontWeight: 700,
+    fontSize: 24,
     color: '#2A363B',
   },
   activeLink: {
@@ -23,7 +24,7 @@ export default function AuthNav() {
         style={styles.link}
         activeStyle={styles.activeLink}
       >
-        Регистрация
+        Registration
       </NavLink>
       <NavLink
         to="/login"
@@ -31,7 +32,7 @@ export default function AuthNav() {
         style={styles.link}
         activeStyle={styles.activeLink}
       >
-        Логин
+        Login
       </NavLink>
     </div>
   );

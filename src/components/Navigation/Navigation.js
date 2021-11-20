@@ -9,6 +9,7 @@ const styles = {
     textDecoration: 'none',
     padding: 12,
     fontWeight: 700,
+    fontSize: 24,
     color: '#2A363B',
   },
   activeLink: {

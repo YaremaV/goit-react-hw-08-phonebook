@@ -43,6 +43,7 @@ export default function RegisterView() {
             value={name}
             onChange={handleChange}
             placeholder="Name"
+            required
           />
         </label>
 
@@ -54,6 +55,7 @@ export default function RegisterView() {
             value={email}
             onChange={handleChange}
             placeholder="Name@gmail.com"
+            required
           />
         </label>
 
@@ -64,10 +66,11 @@ export default function RegisterView() {
             name="password"
             value={password}
             onChange={handleChange}
+            required
           />
         </label>
 
-        <button type="submit" className={s.button}>
+        <button type="submit" className={s.btnGrad}>
           Sign Up
         </button>
       </form>

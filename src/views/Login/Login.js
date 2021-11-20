@@ -38,6 +38,7 @@ export default function Login() {
             name="email"
             value={email}
             onChange={handleChange}
+            required
           />
         </label>
 
@@ -48,10 +49,11 @@ export default function Login() {
             name="password"
             value={password}
             onChange={handleChange}
+            required
           />
         </label>
 
-        <button type="submit" className={s.button}>
+        <button type="submit" className={s.btnGrad}>
           Sign In
         </button>
       </form>

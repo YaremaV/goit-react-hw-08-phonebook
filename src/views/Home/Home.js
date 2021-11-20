@@ -1,7 +1,9 @@
+import s from './home.module.css';
+
 export default function Home() {
   return (
-    <div>
-      <h1>Home Page</h1>
+    <div className={s.container}>
+      <h1 className={s.title}>Welcome to PhoneBook</h1>
     </div>
   );
 }
